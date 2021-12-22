@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito');
+body {
+    background-image: url('images/backimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* main container */
+
+.container {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+#main {
+    margin-top: -2rem;
+}
+
+
+/* for all card  */
+
+#card {
+    height: 35rem;
+    width: 20rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    background: inherit;
+    display: inline-block;
+    position: relative;
+    margin-top: 4rem;
+    border: none;
+    box-shadow: 0px 20px 30px rgb(8, 8, 8);
+    color: rgb(255, 255, 255);
+}
+
+
+/* search bar */
+
+input {
+    /* background: inherit; */
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    width: 10rem;
+    margin-left: 3rem;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    stroke: none;
+    /* border-bottom: 1px solid white; */
+}
+
+#searchbtn {
+    outline: none;
+}
+
+
+/* placeholder of search bar(input) */
+
+::placeholder {
+    color: rgb(255, 255, 255);
+    filter: opacity(1);
+}
+
+#location {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#temp {
+    margin-top: -1.5rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Monotype Baskerville Italic';
+}
+
+#celcius {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#weatherStat {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(97, 92, 92);
+}
+
+#weatherImg {
+    margin-top: .5rem;
+}
+
+#feelsLike {
+    margin-top: -2rem;
+    font-style: italic;
+}
+
+#day {
+    margin-top: 1.5rem;
+}
+
+#WeatherState {
+    margin-top: 1rem;
+}
+
+#wData {
+    margin-top: -1rem;
+    word-spacing: 2.8rem;
+    text-indent: .5rem;
+}
+
+
+/* 2nd Card */
+
+#searchbtn2 {
+    outline: none;
+}
+
+#location2 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#temp2 {
+    margin-top: -1.5rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Monotype Baskerville Italic';
+}
+
+#celcius2 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#weatherStat2 {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(97, 92, 92);
+}
+
+#weatherImg2 {
+    margin-top: .5rem;
+}
+
+#feelsLike2 {
+    margin-top: -2rem;
+    font-style: italic;
+}
+
+#day2 {
+    margin-top: 1.5rem;
+}
+
+#WeatherState2 {
+    margin-top: 1rem;
+}
+
+#wData2 {
+    margin-top: -1rem;
+    word-spacing: 2.8rem;
+    text-indent: .5rem;
+}
+
+
+/* 3rd Card */
+
+#searchbtn3 {
+    outline: none;
+}
+
+#location3 {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#temp3 {
+    margin-top: -1.5rem;
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Monotype Baskerville Italic';
+}
+
+#celcius3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+#weatherStat3 {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: rgb(97, 92, 92);
+}
+
+#weatherImg3 {
+    margin-top: .5rem;
+}
+
+#feelsLike3 {
+    margin-top: -2rem;
+    font-style: italic;
+}
+
+#day3 {
+    margin-top: 1.5rem;
+}
+
+#WeatherState3 {
+    margin-top: 1rem;
+}
+
+#wData3 {
+    margin-top: -1rem;
+    word-spacing: 2.8rem;
+    text-indent: .5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: #0575e6;
+        background: linear-gradient(to right, #0575e6, #021b79);
+    }
+    #card {
+        margin-left: 0px;
+    }
+}

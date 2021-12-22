@@ -1,0 +1,87 @@
+{
+    "location": {
+        "name": "Mumbai",
+        "region": "Maharashtra",
+        "country": "India",
+        "lat": 18.98,
+        "lon": 72.83,
+        "tz_id": "Asia/Kolkata",
+        "localtime_epoch": 1639834924,
+        "localtime": "2021-12-18 19:12"
+    },
+    "current": {
+        "last_updated_epoch": 1639834200,
+        "last_updated": "2021-12-18 19:00",
+        "temp_c": 28.0,
+        "temp_f": 82.4,
+        "is_day": 0,
+        "condition": {
+            "text": "Mist",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/143.png",
+            "code": 1030
+        },
+        "wind_mph": 4.3,
+        "wind_kph": 6.8,
+        "wind_degree": 310,
+        "wind_dir": "NW",
+        "pressure_mb": 1013.0,
+        "pressure_in": 29.91,
+        "precip_mm": 0.0,
+        "precip_in": 0.0,
+        "humidity": 62,
+        "cloud": 0,
+        "feelslike_c": 29.2,
+        "feelslike_f": 84.6,
+        "vis_km": 2.1,
+        "vis_miles": 1.0,
+        "uv": 1.0,
+        "gust_mph": 17.4,
+        "gust_kph": 28.1
+    }
+};
+
+
+{
+    "coord": {
+        "lon": 74.75,
+        "lat": 13.35
+    },
+    "weather": [{
+        "id": 800,
+        "main": "Clear",
+        "description": "clear sky",
+        "icon": "01n"
+    }],
+    "base": "stations",
+    "main": {
+        "temp": 298.73,
+        "feels_like": 299.17,
+        "temp_min": 298.73,
+        "temp_max": 298.73,
+        "pressure": 1014,
+        "humidity": 70,
+        "sea_level": 1014,
+        "grnd_level": 1012
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 1.26,
+        "deg": 78,
+        "gust": 1.32
+    },
+    "clouds": {
+        "all": 4
+    },
+    "dt": 1640189812,
+    "sys": {
+        "type": 1,
+        "id": 9217,
+        "country": "IN",
+        "sunrise": 1640135962,
+        "sunset": 1640176776
+    },
+    "timezone": 19800,
+    "id": 1253952,
+    "name": "Udupi",
+    "cod": 200
+}
