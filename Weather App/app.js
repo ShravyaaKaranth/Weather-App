@@ -150,7 +150,7 @@ function DataInsertOnLoad(data) {
     loc.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData2}, ${regData}, ${country}</p>`;
 
     let tempData = data.current.temp_c;
-    temperature.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+    temperature.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
 
     feelsLike.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
@@ -163,7 +163,7 @@ function DataInsertOnLoad(data) {
 
     iconDiv.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+    WeatherState.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
 }
 
 
@@ -187,7 +187,7 @@ searchbtn.addEventListener('click', (e) => {
             loc.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData}, ${regData}, ${country}</p>`;
 
             let tempData = data.current.temp_c;
-            temperature.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+            temperature.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
 
             feelsLike.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
@@ -199,7 +199,7 @@ searchbtn.addEventListener('click', (e) => {
             Day.innerHTML = `<p>${newDate}</p>`;
 
             iconDiv.innerHTML = WeatherImage(weatherStatData);
-            WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+            WeatherState.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
         })
 })
 
@@ -216,7 +216,7 @@ function DataInsertOnLoad2(data) {
     loc2.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData2}, ${regData2}, ${country2}</p>`;
 
     let tempData = data.current.temp_c;
-    temperature2.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+    temperature2.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
     feelsLike2.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
     let weatherStatData = data.current.condition.text;
@@ -228,7 +228,7 @@ function DataInsertOnLoad2(data) {
 
     iconDiv2.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+    WeatherState2.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
 }
 
 searchbtn2.addEventListener('click', (e) => {
@@ -250,7 +250,7 @@ searchbtn2.addEventListener('click', (e) => {
             loc2.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData2}, ${regData2}, ${country2}</p>`;
 
             let tempData = data.current.temp_c;
-            temperature2.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+            temperature2.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
 
             feelsLike2.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
@@ -263,7 +263,7 @@ searchbtn2.addEventListener('click', (e) => {
 
             iconDiv2.innerHTML = WeatherImage(weatherStatData);
 
-            WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+            WeatherState2.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
 
         })
 })
@@ -281,7 +281,7 @@ function DataInsertOnLoad3(data) {
     loc3.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData3}, ${regData3}, ${country3}</p>`;
 
     let tempData = data.current.temp_c;
-    temperature3.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+    temperature3.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
 
     feelsLike3.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
@@ -294,7 +294,7 @@ function DataInsertOnLoad3(data) {
 
     iconDiv3.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+    WeatherState3.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
 }
 
 searchbtn3.addEventListener('click', (e) => {
@@ -316,7 +316,7 @@ searchbtn3.addEventListener('click', (e) => {
             loc3.innerHTML = `<p><i class="fa fa-map-marker"></i> ${locData3}, ${regData3}, ${country3}</p>`;
 
             let tempData = data.current.temp_c;
-            temperature3.innerHTML = `<p>${tempData}<span id = "celcius">°C</span></p>`;
+            temperature3.innerHTML = `<p>${tempData}<span class = "celcius">°C</span></p>`;
 
             feelsLike3.innerHTML = `Feels like ${data.current.feelslike_c}°C`;
 
@@ -329,7 +329,7 @@ searchbtn3.addEventListener('click', (e) => {
 
             iconDiv3.innerHTML = WeatherImage(weatherStatData);
 
-            WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
+            WeatherState3.innerHTML = `<p class="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p class="wData">${data.current.humidity} ${data.current.wind_kph} ${data.current.wind_dir}</p></p>`;
 
         })
 })
