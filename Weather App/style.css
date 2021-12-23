@@ -113,10 +113,12 @@ input {
 }
 
 #wData {
+    display: flex;
     margin-top: -1rem;
-    word-spacing: 2.8rem;
-    text-indent: .5rem;
+    word-spacing: 3.5rem;
+    padding-left: 3.8rem;
 }
+
 
 
 /* 2nd Card */
@@ -167,12 +169,6 @@ input {
     margin-top: 1rem;
 }
 
-#wData2 {
-    margin-top: -1rem;
-    word-spacing: 2.8rem;
-    text-indent: .5rem;
-}
-
 
 /* 3rd Card */
 
@@ -220,12 +216,6 @@ input {
 
 #WeatherState3 {
     margin-top: 1rem;
-}
-
-#wData3 {
-    margin-top: -1rem;
-    word-spacing: 2.8rem;
-    text-indent: .5rem;
 }
 
 @media only screen and (max-width: 600px) {
