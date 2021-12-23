@@ -58,7 +58,7 @@ function updateClock(string) {
     let newdate = string.substring(11, 16);
 
     // Prepare the time string from hours, minutes and seconds
-    let currentTimeString = `${Day} <br>${dayOfWeek}<br>  ${newdate}`;
+    let currentTimeString = `${Day}, ${dayOfWeek},  ${newdate}`;
 
     return currentTimeString;
 }
@@ -163,7 +163,7 @@ function DataInsertOnLoad(data) {
 
     iconDiv.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+    WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
 }
 
 
@@ -199,7 +199,7 @@ searchbtn.addEventListener('click', (e) => {
             Day.innerHTML = `<p>${newDate}</p>`;
 
             iconDiv.innerHTML = WeatherImage(weatherStatData);
-            WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+            WeatherState.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
         })
 })
 
@@ -228,7 +228,7 @@ function DataInsertOnLoad2(data) {
 
     iconDiv2.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+    WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
 }
 
 searchbtn2.addEventListener('click', (e) => {
@@ -263,7 +263,7 @@ searchbtn2.addEventListener('click', (e) => {
 
             iconDiv2.innerHTML = WeatherImage(weatherStatData);
 
-            WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+            WeatherState2.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
 
         })
 })
@@ -294,7 +294,7 @@ function DataInsertOnLoad3(data) {
 
     iconDiv3.innerHTML = WeatherImage(weatherStatData);
 
-    WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+    WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
 }
 
 searchbtn3.addEventListener('click', (e) => {
@@ -329,7 +329,7 @@ searchbtn3.addEventListener('click', (e) => {
 
             iconDiv3.innerHTML = WeatherImage(weatherStatData);
 
-            WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}kph    ${data.current.wind_dir}</p></p>`;
+            WeatherState3.innerHTML = `<p id="wDataP">Humidity &nbsp&nbsp&nbsp Wind &nbsp&nbsp&nbsp Wind Dir <p id="wData">${data.current.humidity}   ${data.current.wind_kph}   ${data.current.wind_dir}</p></p>`;
 
         })
 })
