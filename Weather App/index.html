@@ -16,16 +16,16 @@
 </head>
 
 <body>
+    <h3>Weather App</h3>
     <div class="container">
-        <h3>Weather App</h3>
         <div id="main">
             <!-- Card1 -->
-            <div class="card" id="card">
+            <div class="card1" id="card" >
                 <div class="card-body card-img-overlay" id="card-body">
-                    <form class="d-flex">
-                        <input id="searchbox1" class="input" type="search" placeholder="Search" autocomplete="off">
-                        <button id="searchbtn" class="btn" type="submit"><img src="images/search_icon.png" /></button>
-                    </form>
+                        <form class="d-flex" id="suggInput">
+                            <input id="searchbox1" class="input" type="search" placeholder="Search" autocomplete="off">
+                            <button id="searchbtn" class="btn" type="submit"><img src="images/search_icon.png" /></button>
+                        </form>
                     <div class="location" id="location"></div>
                     <div class="weatherImg" id="weatherImg"></div>
                     <div class="weatherStat" id="weatherStat"></div>
@@ -36,7 +36,7 @@
                 </div>
             </div>
             <!-- Card2-->
-            <div class="card" id="card">
+            <div class="card2" id="card">
                 <div class="card-body card-img-overlay" id="card-body">
                     <form class="d-flex">
                         <input id="searchbox2" class="input" type="search" placeholder="Search" autocomplete="off">
@@ -52,7 +52,7 @@
                 </div>
             </div>
             <!-- Card3 -->
-            <div class="card" id="card">
+            <div class="card3" id="card">
                 <div class="card-body card-img-overlay" id="card-body">
                     <form class="d-flex">
                         <input id="searchbox3" class="input" type="search" placeholder="Search" autocomplete="off">
@@ -71,7 +71,7 @@
 
     </div>
 
-    <script src="app.js"></script>
+    <script src="JS/app.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
