@@ -1,6 +1,5 @@
-console.log('Weather App');
 
-const apiKey = `231210d949974765a23155553212212`;
+const apiKey = `427163ea4bed434aa2283747212512 `;
 
 // Grab every element with id of 1st card
 let searchbtn = document.getElementById('searchbtn');
@@ -33,7 +32,6 @@ let weatherStat3 = document.getElementById('weatherStat3');
 let Day3 = document.getElementById('day3');
 let feelsLike3 = document.getElementById('feelsLike3');
 let WeatherState3 = document.getElementById('WeatherState3'); // For humidity, wind speed
-
 
 function DayOfWeek(day) {
     let Day = [
@@ -89,6 +87,7 @@ function WeatherImage(text) {
     return data;
 }
 
+
 function OnWindowLoad(string1, string2, string3) {
     window.addEventListener('load', () => {
         function Data1() {
@@ -109,14 +108,14 @@ function OnWindowLoad(string1, string2, string3) {
         function Data2() {
 
             let city2 = string2;
-            const base2 = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city2}`;
+            const base = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city2}`;
 
-            fetch(base2)
-                .then((response2) => {
-                    return response2.json();
+            fetch(base)
+                .then((response) => {
+                    return response.json();
                 })
-                .then((data2) => {
-                    DataInsertOnLoad2(data2);
+                .then((data) => {
+                    DataInsertOnLoad2(data);
                 })
         }
         Data2();
@@ -171,13 +170,13 @@ searchbtn.addEventListener('click', (e) => {
     e.preventDefault();
     let city = document.getElementById('searchbox1').value;
     const base = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    document.getElementById('searchbox1').value = '';
 
     fetch(base)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-
             let locData = data.location.name;
             let regData = data.location.region;
             let country = data.location.country;
@@ -235,6 +234,7 @@ searchbtn2.addEventListener('click', (e) => {
     e.preventDefault();
     let city = document.getElementById('searchbox2').value;
     const base = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    document.getElementById('searchbox2').value = '';
 
     fetch(base)
         .then((response) => {
@@ -301,6 +301,7 @@ searchbtn3.addEventListener('click', (e) => {
     e.preventDefault();
     let city = document.getElementById('searchbox3').value;
     const base = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
+    document.getElementById('searchbox3').value = '';
 
     fetch(base)
         .then((response) => {
