@@ -173,6 +173,7 @@ input {
     body {
         background: #0575e6;
         background: linear-gradient(to right, #0575e6, #021b79);
+        overflow : visible;
     }
 
     #card {
