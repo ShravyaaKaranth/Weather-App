@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url('images/backimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Nunito', Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
 }
 
 
@@ -11,6 +18,7 @@ body {
 
 .container {
     text-align: center;
+    margin: auto;
 }
 
 h3 {
@@ -18,6 +26,7 @@ h3 {
     text-align: center;
     font-size: 3rem;
     color: white;
+    animation: 1.15s ease-out 0s 1 slideInFromLeft;
 }
 
 #main {
@@ -118,11 +127,55 @@ input {
     flex-direction: column;
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.card1 {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.card2 {
+    animation: 1s ease-out 0s 1 slideInFromTop;
+}
+
+.card3 {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+
 @media only screen and (max-width: 600px) {
     body {
         background: #0575e6;
         background: linear-gradient(to right, #0575e6, #021b79);
     }
+
     #card {
         margin-left: 0px;
     }
